@@ -54,6 +54,14 @@ class ViewController: UIViewController {
         updateFilter("suit.png")
     }
     
+    @IBAction func filterGamer(sender: AnyObject) {
+        updateFilter("hoodie.png")
+    }
+    
+    @IBAction func filterKid(sender: AnyObject) {
+        updateFilter("kid.png")
+    }
+    
     func updateFilter(assetName: String) {
         let bounds:CGRect = overlayView.bounds
         

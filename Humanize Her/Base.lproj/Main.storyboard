@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,83 +18,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gh2-pq-8fN">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh2-pq-8fN">
                                 <rect key="frame" x="0.0" y="44" width="600" height="491"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGF-8q-PNu" userLabel="Overlay Wrapper">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGF-8q-PNu" userLabel="Overlay Wrapper">
                                 <rect key="frame" x="0.0" y="44" width="600" height="491"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cQ-s0-h46" userLabel="Filters">
-                                <rect key="frame" x="0.0" y="534" width="600" height="66"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5P-K9-Y1z">
-                                        <rect key="frame" x="5" y="10" width="82" height="50"/>
-                                        <state key="normal" image="icon_female.png"/>
-                                        <connections>
-                                            <action selector="filterNone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VIc-OW-mBH"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDo-Fy-dQ2">
-                                        <rect key="frame" x="201" y="10" width="82" height="50"/>
-                                        <state key="normal" image="icon_briefcase.png"/>
-                                        <connections>
-                                            <action selector="filterSuit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PC4-cD-Eyt"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbb-KO-NeN">
-                                        <rect key="frame" x="304" y="10" width="82" height="50"/>
-                                        <state key="normal" image="icon_gaming.png"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-JC-fNm">
-                                        <rect key="frame" x="96" y="10" width="106" height="50"/>
-                                        <state key="normal" image="icon_doctor.png"/>
-                                        <connections>
-                                            <action selector="filterDoctor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c0W-Of-Irf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuE-2n-ptc">
-                                        <rect key="frame" x="511" y="10" width="82" height="50"/>
-                                        <state key="normal" image="icon_briefcase.png"/>
-                                        <connections>
-                                            <action selector="filterSuit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IGX-x9-lqP"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28S-qT-TER">
-                                        <rect key="frame" x="412" y="10" width="82" height="50"/>
-                                        <state key="normal" image="icon_baby.png"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <constraints>
-                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" constant="5" id="6Nh-bb-KzO"/>
-                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="top" secondItem="4cQ-s0-h46" secondAttribute="top" constant="10" id="9Zu-5Q-FQW"/>
-                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="top" secondItem="SDo-Fy-dQ2" secondAttribute="top" id="9aj-in-Kel"/>
-                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="top" secondItem="28S-qT-TER" secondAttribute="top" id="MJ1-RR-IlJ"/>
-                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="leading" secondItem="SDo-Fy-dQ2" secondAttribute="trailing" constant="21" id="S9h-4l-xar"/>
-                                    <constraint firstItem="SDo-Fy-dQ2" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" constant="201" id="mAw-CY-Rfi"/>
-                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="top" secondItem="SDo-Fy-dQ2" secondAttribute="top" id="mQ7-Nc-0Xf"/>
-                                    <constraint firstAttribute="trailing" secondItem="28S-qT-TER" secondAttribute="trailing" constant="97" id="npn-D4-z4S"/>
-                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="top" secondItem="o5P-K9-Y1z" secondAttribute="top" id="omI-IB-fDQ"/>
-                                    <constraint firstAttribute="leading" secondItem="Cyq-JC-fNm" secondAttribute="leading" constant="-96" id="sRH-cl-Pro"/>
-                                    <constraint firstAttribute="bottom" secondItem="o5P-K9-Y1z" secondAttribute="bottom" constant="6" id="tUA-LX-8M5"/>
-                                    <constraint firstItem="28S-qT-TER" firstAttribute="leading" secondItem="xbb-KO-NeN" secondAttribute="trailing" constant="35" id="vEd-gx-9MJ"/>
-                                </constraints>
-                            </scrollView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGz-5v-M1I">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem id="3CZ-DS-gGh"/>
                                 </items>
                             </navigationBar>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cQ-s0-h46" userLabel="Filters">
+                                <rect key="frame" x="0.0" y="534" width="600" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5P-K9-Y1z">
+                                        <rect key="frame" x="5" y="10" width="82" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="01S-fh-7kE"/>
+                                            <constraint firstAttribute="height" constant="50" id="t6T-jb-wm5"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_female.png"/>
+                                        <connections>
+                                            <action selector="filterNone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VIc-OW-mBH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDo-Fy-dQ2">
+                                        <rect key="frame" x="201" y="10" width="82" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="X8u-ZK-O6W"/>
+                                            <constraint firstAttribute="width" constant="82" id="kFm-JJ-YVj"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_briefcase.png"/>
+                                        <connections>
+                                            <action selector="filterSuit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PC4-cD-Eyt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbb-KO-NeN">
+                                        <rect key="frame" x="304" y="10" width="82" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="hdb-Qc-U7R"/>
+                                            <constraint firstAttribute="height" constant="50" id="m7U-a3-geY"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_gaming.png"/>
+                                        <connections>
+                                            <action selector="filterGamer:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1h0-Qc-bft"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28S-qT-TER">
+                                        <rect key="frame" x="412" y="10" width="82" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="qPu-C3-Ue2"/>
+                                            <constraint firstAttribute="width" constant="82" id="qnN-Ap-eTB"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_baby.png"/>
+                                        <connections>
+                                            <action selector="filterKid:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rOc-7F-mw4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuE-2n-ptc">
+                                        <rect key="frame" x="511" y="10" width="82" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="D03-T9-rYO"/>
+                                            <constraint firstAttribute="width" constant="82" id="m53-VB-pxx"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_briefcase.png"/>
+                                        <connections>
+                                            <action selector="filterSuit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IGX-x9-lqP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-JC-fNm">
+                                        <rect key="frame" x="95" y="8" width="82" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="82" id="Ee1-nM-TyN"/>
+                                            <constraint firstAttribute="height" constant="50" id="ZxK-yW-sS2"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_doctor.png"/>
+                                        <connections>
+                                            <action selector="filterDoctor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c0W-Of-Irf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="28S-qT-TER" firstAttribute="leading" secondItem="o5P-K9-Y1z" secondAttribute="leading" constant="407" id="0h8-sR-Y8I"/>
+                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="height" secondItem="o5P-K9-Y1z" secondAttribute="height" id="0iz-Fe-JxA"/>
+                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="top" secondItem="4cQ-s0-h46" secondAttribute="topMargin" id="2s3-Oa-Ard"/>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" constant="5" id="6AZ-RC-FWY"/>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="top" secondItem="SDo-Fy-dQ2" secondAttribute="top" id="9tq-05-hkM"/>
+                                    <constraint firstItem="28S-qT-TER" firstAttribute="height" secondItem="o5P-K9-Y1z" secondAttribute="height" id="JW8-t9-nqS"/>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="top" secondItem="xbb-KO-NeN" secondAttribute="top" id="JyY-1i-2ac"/>
+                                    <constraint firstItem="vuE-2n-ptc" firstAttribute="height" secondItem="o5P-K9-Y1z" secondAttribute="height" id="PUR-jy-obX"/>
+                                    <constraint firstItem="SDo-Fy-dQ2" firstAttribute="height" secondItem="o5P-K9-Y1z" secondAttribute="height" id="QkE-1Z-OnC"/>
+                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="width" secondItem="o5P-K9-Y1z" secondAttribute="width" id="SDp-We-5s3"/>
+                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="bottom" secondItem="4cQ-s0-h46" secondAttribute="bottomMargin" id="Ue6-G0-Nsa"/>
+                                    <constraint firstAttribute="trailing" secondItem="vuE-2n-ptc" secondAttribute="trailing" constant="7" id="WBM-o2-cfS"/>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="top" secondItem="vuE-2n-ptc" secondAttribute="top" id="XLR-68-EhA"/>
+                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="width" secondItem="o5P-K9-Y1z" secondAttribute="width" id="a0O-I9-3FC"/>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="top" secondItem="28S-qT-TER" secondAttribute="top" id="bWI-5l-KeY"/>
+                                    <constraint firstItem="vuE-2n-ptc" firstAttribute="width" secondItem="o5P-K9-Y1z" secondAttribute="width" id="cdV-xk-kdN"/>
+                                    <constraint firstItem="vuE-2n-ptc" firstAttribute="leading" secondItem="o5P-K9-Y1z" secondAttribute="leading" constant="506" id="dtd-Co-bCC"/>
+                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="leading" secondItem="o5P-K9-Y1z" secondAttribute="leading" constant="299" id="jUf-qB-3AZ"/>
+                                    <constraint firstItem="SDo-Fy-dQ2" firstAttribute="leading" secondItem="o5P-K9-Y1z" secondAttribute="leading" constant="196" id="kvc-0k-lhz"/>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="top" secondItem="4cQ-s0-h46" secondAttribute="top" constant="10" id="nbU-WG-rio"/>
+                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="leading" secondItem="o5P-K9-Y1z" secondAttribute="leading" constant="90" id="wLF-WF-0ky"/>
+                                    <constraint firstItem="SDo-Fy-dQ2" firstAttribute="width" secondItem="o5P-K9-Y1z" secondAttribute="width" id="y0c-QF-jTx"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="gh2-pq-8fN" firstAttribute="top" secondItem="RGz-5v-M1I" secondAttribute="top" id="4CM-vE-gxn"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="top" secondItem="RGz-5v-M1I" secondAttribute="top" constant="44" id="4CM-vE-gxn"/>
                             <constraint firstItem="gh2-pq-8fN" firstAttribute="leading" secondItem="LGF-8q-PNu" secondAttribute="leading" id="G7T-TD-xV5"/>
-                            <constraint firstItem="4cQ-s0-h46" firstAttribute="top" secondItem="gh2-pq-8fN" secondAttribute="bottom" id="G8x-4l-Ea2"/>
+                            <constraint firstItem="4cQ-s0-h46" firstAttribute="top" secondItem="gh2-pq-8fN" secondAttribute="bottom" constant="-1" id="G8x-4l-Ea2"/>
                             <constraint firstItem="LGF-8q-PNu" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" id="KvO-AE-raf"/>
                             <constraint firstItem="4cQ-s0-h46" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MGa-7z-OOD"/>
-                            <constraint firstItem="LGF-8q-PNu" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="PTY-bg-kpl"/>
+                            <constraint firstItem="LGF-8q-PNu" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" constant="-65" id="PTY-bg-kpl"/>
                             <constraint firstItem="RGz-5v-M1I" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Ugg-yn-QQr"/>
                             <constraint firstItem="LGF-8q-PNu" firstAttribute="trailing" secondItem="gh2-pq-8fN" secondAttribute="trailing" id="Xcz-fj-gpF"/>
                             <constraint firstAttribute="trailing" secondItem="4cQ-s0-h46" secondAttribute="trailing" id="Zxz-Wx-Cck"/>
@@ -105,11 +146,6 @@
                             <constraint firstItem="4cQ-s0-h46" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="w1f-k5-pMO"/>
                             <constraint firstItem="LGF-8q-PNu" firstAttribute="leading" secondItem="RGz-5v-M1I" secondAttribute="leading" id="xwT-vD-rwq"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="aCm-xn-RnU"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
                         <outlet property="overlayView" destination="LGF-8q-PNu" id="50g-8l-QH8"/>
