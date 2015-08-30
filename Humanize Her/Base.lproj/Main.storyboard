@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Humanize_Her" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gh2-pq-8fN">
+                                <rect key="frame" x="0.0" y="44" width="600" height="491"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LGF-8q-PNu" userLabel="Overlay Wrapper">
+                                <rect key="frame" x="0.0" y="44" width="600" height="491"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cQ-s0-h46" userLabel="Filters">
+                                <rect key="frame" x="0.0" y="534" width="600" height="66"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5P-K9-Y1z">
+                                        <rect key="frame" x="5" y="10" width="82" height="50"/>
+                                        <state key="normal" image="icon_female.png"/>
+                                        <connections>
+                                            <action selector="filterNone:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VIc-OW-mBH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SDo-Fy-dQ2">
+                                        <rect key="frame" x="201" y="10" width="82" height="50"/>
+                                        <state key="normal" image="icon_briefcase.png"/>
+                                        <connections>
+                                            <action selector="filterSuit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="PC4-cD-Eyt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbb-KO-NeN">
+                                        <rect key="frame" x="304" y="10" width="82" height="50"/>
+                                        <state key="normal" image="icon_gaming.png"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-JC-fNm">
+                                        <rect key="frame" x="96" y="10" width="106" height="50"/>
+                                        <state key="normal" image="icon_doctor.png"/>
+                                        <connections>
+                                            <action selector="filterDoctor:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="c0W-Of-Irf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuE-2n-ptc">
+                                        <rect key="frame" x="511" y="10" width="82" height="50"/>
+                                        <state key="normal" image="icon_briefcase.png"/>
+                                        <connections>
+                                            <action selector="filterSuit:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IGX-x9-lqP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="28S-qT-TER">
+                                        <rect key="frame" x="412" y="10" width="82" height="50"/>
+                                        <state key="normal" image="icon_baby.png"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" constant="5" id="6Nh-bb-KzO"/>
+                                    <constraint firstItem="o5P-K9-Y1z" firstAttribute="top" secondItem="4cQ-s0-h46" secondAttribute="top" constant="10" id="9Zu-5Q-FQW"/>
+                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="top" secondItem="SDo-Fy-dQ2" secondAttribute="top" id="9aj-in-Kel"/>
+                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="top" secondItem="28S-qT-TER" secondAttribute="top" id="MJ1-RR-IlJ"/>
+                                    <constraint firstItem="xbb-KO-NeN" firstAttribute="leading" secondItem="SDo-Fy-dQ2" secondAttribute="trailing" constant="21" id="S9h-4l-xar"/>
+                                    <constraint firstItem="SDo-Fy-dQ2" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" constant="201" id="mAw-CY-Rfi"/>
+                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="top" secondItem="SDo-Fy-dQ2" secondAttribute="top" id="mQ7-Nc-0Xf"/>
+                                    <constraint firstAttribute="trailing" secondItem="28S-qT-TER" secondAttribute="trailing" constant="97" id="npn-D4-z4S"/>
+                                    <constraint firstItem="Cyq-JC-fNm" firstAttribute="top" secondItem="o5P-K9-Y1z" secondAttribute="top" id="omI-IB-fDQ"/>
+                                    <constraint firstAttribute="leading" secondItem="Cyq-JC-fNm" secondAttribute="leading" constant="-96" id="sRH-cl-Pro"/>
+                                    <constraint firstAttribute="bottom" secondItem="o5P-K9-Y1z" secondAttribute="bottom" constant="6" id="tUA-LX-8M5"/>
+                                    <constraint firstItem="28S-qT-TER" firstAttribute="leading" secondItem="xbb-KO-NeN" secondAttribute="trailing" constant="35" id="vEd-gx-9MJ"/>
+                                </constraints>
+                            </scrollView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGz-5v-M1I">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem id="3CZ-DS-gGh"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="top" secondItem="RGz-5v-M1I" secondAttribute="top" id="4CM-vE-gxn"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="leading" secondItem="LGF-8q-PNu" secondAttribute="leading" id="G7T-TD-xV5"/>
+                            <constraint firstItem="4cQ-s0-h46" firstAttribute="top" secondItem="gh2-pq-8fN" secondAttribute="bottom" id="G8x-4l-Ea2"/>
+                            <constraint firstItem="LGF-8q-PNu" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" id="KvO-AE-raf"/>
+                            <constraint firstItem="4cQ-s0-h46" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MGa-7z-OOD"/>
+                            <constraint firstItem="LGF-8q-PNu" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="PTY-bg-kpl"/>
+                            <constraint firstItem="RGz-5v-M1I" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Ugg-yn-QQr"/>
+                            <constraint firstItem="LGF-8q-PNu" firstAttribute="trailing" secondItem="gh2-pq-8fN" secondAttribute="trailing" id="Xcz-fj-gpF"/>
+                            <constraint firstAttribute="trailing" secondItem="4cQ-s0-h46" secondAttribute="trailing" id="Zxz-Wx-Cck"/>
+                            <constraint firstItem="RGz-5v-M1I" firstAttribute="trailing" secondItem="gh2-pq-8fN" secondAttribute="trailing" id="Zzq-iq-ZQd"/>
+                            <constraint firstItem="LGF-8q-PNu" firstAttribute="bottom" secondItem="gh2-pq-8fN" secondAttribute="bottom" id="aCm-xn-RnU"/>
+                            <constraint firstItem="LGF-8q-PNu" firstAttribute="top" secondItem="RGz-5v-M1I" secondAttribute="bottom" id="drA-JK-vXL"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="bottom" secondItem="LGF-8q-PNu" secondAttribute="bottom" id="mo9-BO-qiL"/>
+                            <constraint firstItem="4cQ-s0-h46" firstAttribute="trailing" secondItem="LGF-8q-PNu" secondAttribute="trailing" id="tD8-DE-zGy"/>
+                            <constraint firstItem="4cQ-s0-h46" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="w1f-k5-pMO"/>
+                            <constraint firstItem="LGF-8q-PNu" firstAttribute="leading" secondItem="RGz-5v-M1I" secondAttribute="leading" id="xwT-vD-rwq"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="aCm-xn-RnU"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="overlayView" destination="LGF-8q-PNu" id="50g-8l-QH8"/>
+                        <outlet property="videoView" destination="gh2-pq-8fN" id="UVv-MI-5De"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_baby.png" width="50" height="50"/>
+        <image name="icon_briefcase.png" width="50" height="50"/>
+        <image name="icon_doctor.png" width="50" height="50"/>
+        <image name="icon_female.png" width="50" height="50"/>
+        <image name="icon_gaming.png" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02871A851B9189D60073A236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02871A841B9189D60073A236 /* AppDelegate.swift */; };
+		02871A871B9189D60073A236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02871A861B9189D60073A236 /* ViewController.swift */; };
+		02871A8A1B9189D60073A236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02871A881B9189D60073A236 /* Main.storyboard */; };
+		02871A8C1B9189D60073A236 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 02871A8B1B9189D60073A236 /* Images.xcassets */; };
+		02871A8F1B9189D60073A236 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 02871A8D1B9189D60073A236 /* LaunchScreen.xib */; };
+		02871A9B1B9189D60073A236 /* Humanize_HerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02871A9A1B9189D60073A236 /* Humanize_HerTests.swift */; };
+		02E417091B925BB100BAFD1A /* clinton.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417041B925BB100BAFD1A /* clinton.png */; settings = {ASSET_TAGS = (); }; };
+		02E4170A1B925BB100BAFD1A /* doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417051B925BB100BAFD1A /* doctor.png */; settings = {ASSET_TAGS = (); }; };
+		02E4170B1B925BB100BAFD1A /* hoodie.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417061B925BB100BAFD1A /* hoodie.png */; settings = {ASSET_TAGS = (); }; };
+		02E4170C1B925BB100BAFD1A /* kid.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417071B925BB100BAFD1A /* kid.png */; settings = {ASSET_TAGS = (); }; };
+		02E4170D1B925BB100BAFD1A /* suit.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417081B925BB100BAFD1A /* suit.png */; settings = {ASSET_TAGS = (); }; };
+		02E4170F1B926DAA00BAFD1A /* transparent.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E4170E1B926DAA00BAFD1A /* transparent.png */; settings = {ASSET_TAGS = (); }; };
+		02E417141B92E53400BAFD1A /* icon_baby.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417101B92E53400BAFD1A /* icon_baby.png */; settings = {ASSET_TAGS = (); }; };
+		02E417151B92E53400BAFD1A /* icon_briefcase.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417111B92E53400BAFD1A /* icon_briefcase.png */; settings = {ASSET_TAGS = (); }; };
+		02E417161B92E53400BAFD1A /* icon_doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417121B92E53400BAFD1A /* icon_doctor.png */; settings = {ASSET_TAGS = (); }; };
+		02E417171B92E53400BAFD1A /* icon_gaming.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417131B92E53400BAFD1A /* icon_gaming.png */; settings = {ASSET_TAGS = (); }; };
+		02E417191B92E59500BAFD1A /* icon_female.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417181B92E59500BAFD1A /* icon_female.png */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02871A951B9189D60073A236 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 02871A771B9189D60073A236 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02871A7E1B9189D60073A236;
+			remoteInfo = "Humanize Her";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02871A7F1B9189D60073A236 /* Humanize Her.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Humanize Her.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02871A831B9189D60073A236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02871A841B9189D60073A236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		02871A861B9189D60073A236 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		02871A891B9189D60073A236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		02871A8B1B9189D60073A236 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		02871A8E1B9189D60073A236 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		02871A941B9189D60073A236 /* Humanize HerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Humanize HerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		02871A991B9189D60073A236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		02871A9A1B9189D60073A236 /* Humanize_HerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Humanize_HerTests.swift; sourceTree = "<group>"; };
+		02E417041B925BB100BAFD1A /* clinton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clinton.png; sourceTree = "<group>"; };
+		02E417051B925BB100BAFD1A /* doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor.png; sourceTree = "<group>"; };
+		02E417061B925BB100BAFD1A /* hoodie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hoodie.png; sourceTree = "<group>"; };
+		02E417071B925BB100BAFD1A /* kid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kid.png; sourceTree = "<group>"; };
+		02E417081B925BB100BAFD1A /* suit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suit.png; sourceTree = "<group>"; };
+		02E4170E1B926DAA00BAFD1A /* transparent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparent.png; sourceTree = "<group>"; };
+		02E417101B92E53400BAFD1A /* icon_baby.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_baby.png; sourceTree = "<group>"; };
+		02E417111B92E53400BAFD1A /* icon_briefcase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_briefcase.png; sourceTree = "<group>"; };
+		02E417121B92E53400BAFD1A /* icon_doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_doctor.png; sourceTree = "<group>"; };
+		02E417131B92E53400BAFD1A /* icon_gaming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gaming.png; sourceTree = "<group>"; };
+		02E417181B92E59500BAFD1A /* icon_female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_female.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02871A7C1B9189D60073A236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02871A911B9189D60073A236 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02871A761B9189D60073A236 = {
+			isa = PBXGroup;
+			children = (
+				02871A811B9189D60073A236 /* Humanize Her */,
+				02871A971B9189D60073A236 /* Humanize HerTests */,
+				02871A801B9189D60073A236 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		02871A801B9189D60073A236 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				02871A7F1B9189D60073A236 /* Humanize Her.app */,
+				02871A941B9189D60073A236 /* Humanize HerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		02871A811B9189D60073A236 /* Humanize Her */ = {
+			isa = PBXGroup;
+			children = (
+				02E417031B925B8700BAFD1A /* Assets */,
+				02871A841B9189D60073A236 /* AppDelegate.swift */,
+				02871A861B9189D60073A236 /* ViewController.swift */,
+				02871A881B9189D60073A236 /* Main.storyboard */,
+				02871A8B1B9189D60073A236 /* Images.xcassets */,
+				02871A8D1B9189D60073A236 /* LaunchScreen.xib */,
+				02871A821B9189D60073A236 /* Supporting Files */,
+			);
+			path = "Humanize Her";
+			sourceTree = "<group>";
+		};
+		02871A821B9189D60073A236 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02871A831B9189D60073A236 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02871A971B9189D60073A236 /* Humanize HerTests */ = {
+			isa = PBXGroup;
+			children = (
+				02871A9A1B9189D60073A236 /* Humanize_HerTests.swift */,
+				02871A981B9189D60073A236 /* Supporting Files */,
+			);
+			path = "Humanize HerTests";
+			sourceTree = "<group>";
+		};
+		02871A981B9189D60073A236 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				02871A991B9189D60073A236 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02E417031B925B8700BAFD1A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				02E417181B92E59500BAFD1A /* icon_female.png */,
+				02E417101B92E53400BAFD1A /* icon_baby.png */,
+				02E417111B92E53400BAFD1A /* icon_briefcase.png */,
+				02E417121B92E53400BAFD1A /* icon_doctor.png */,
+				02E417131B92E53400BAFD1A /* icon_gaming.png */,
+				02E4170E1B926DAA00BAFD1A /* transparent.png */,
+				02E417041B925BB100BAFD1A /* clinton.png */,
+				02E417051B925BB100BAFD1A /* doctor.png */,
+				02E417061B925BB100BAFD1A /* hoodie.png */,
+				02E417071B925BB100BAFD1A /* kid.png */,
+				02E417081B925BB100BAFD1A /* suit.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		02871A7E1B9189D60073A236 /* Humanize Her */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02871A9E1B9189D60073A236 /* Build configuration list for PBXNativeTarget "Humanize Her" */;
+			buildPhases = (
+				02871A7B1B9189D60073A236 /* Sources */,
+				02871A7C1B9189D60073A236 /* Frameworks */,
+				02871A7D1B9189D60073A236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Humanize Her";
+			productName = "Humanize Her";
+			productReference = 02871A7F1B9189D60073A236 /* Humanize Her.app */;
+			productType = "com.apple.product-type.application";
+		};
+		02871A931B9189D60073A236 /* Humanize HerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 02871AA11B9189D60073A236 /* Build configuration list for PBXNativeTarget "Humanize HerTests" */;
+			buildPhases = (
+				02871A901B9189D60073A236 /* Sources */,
+				02871A911B9189D60073A236 /* Frameworks */,
+				02871A921B9189D60073A236 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02871A961B9189D60073A236 /* PBXTargetDependency */,
+			);
+			name = "Humanize HerTests";
+			productName = "Humanize HerTests";
+			productReference = 02871A941B9189D60073A236 /* Humanize HerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		02871A771B9189D60073A236 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "That Mike Flynn";
+				TargetAttributes = {
+					02871A7E1B9189D60073A236 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 8384ADJMNS;
+					};
+					02871A931B9189D60073A236 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 02871A7E1B9189D60073A236;
+					};
+				};
+			};
+			buildConfigurationList = 02871A7A1B9189D60073A236 /* Build configuration list for PBXProject "Humanize Her" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 02871A761B9189D60073A236;
+			productRefGroup = 02871A801B9189D60073A236 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				02871A7E1B9189D60073A236 /* Humanize Her */,
+				02871A931B9189D60073A236 /* Humanize HerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02871A7D1B9189D60073A236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02E417151B92E53400BAFD1A /* icon_briefcase.png in Resources */,
+				02E417141B92E53400BAFD1A /* icon_baby.png in Resources */,
+				02E4170D1B925BB100BAFD1A /* suit.png in Resources */,
+				02E4170A1B925BB100BAFD1A /* doctor.png in Resources */,
+				02871A8A1B9189D60073A236 /* Main.storyboard in Resources */,
+				02E4170F1B926DAA00BAFD1A /* transparent.png in Resources */,
+				02E417091B925BB100BAFD1A /* clinton.png in Resources */,
+				02871A8F1B9189D60073A236 /* LaunchScreen.xib in Resources */,
+				02871A8C1B9189D60073A236 /* Images.xcassets in Resources */,
+				02E417161B92E53400BAFD1A /* icon_doctor.png in Resources */,
+				02E417191B92E59500BAFD1A /* icon_female.png in Resources */,
+				02E417171B92E53400BAFD1A /* icon_gaming.png in Resources */,
+				02E4170C1B925BB100BAFD1A /* kid.png in Resources */,
+				02E4170B1B925BB100BAFD1A /* hoodie.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02871A921B9189D60073A236 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		02871A7B1B9189D60073A236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02871A871B9189D60073A236 /* ViewController.swift in Sources */,
+				02871A851B9189D60073A236 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		02871A901B9189D60073A236 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02871A9B1B9189D60073A236 /* Humanize_HerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02871A961B9189D60073A236 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 02871A7E1B9189D60073A236 /* Humanize Her */;
+			targetProxy = 02871A951B9189D60073A236 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		02871A881B9189D60073A236 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02871A891B9189D60073A236 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		02871A8D1B9189D60073A236 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				02871A8E1B9189D60073A236 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		02871A9C1B9189D60073A236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		02871A9D1B9189D60073A236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		02871A9F1B9189D60073A236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Humanize Her/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		02871AA01B9189D60073A236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Humanize Her/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		02871AA21B9189D60073A236 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Humanize HerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Humanize Her.app/Humanize Her";
+			};
+			name = Debug;
+		};
+		02871AA31B9189D60073A236 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Humanize HerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Humanize Her.app/Humanize Her";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		02871A7A1B9189D60073A236 /* Build configuration list for PBXProject "Humanize Her" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02871A9C1B9189D60073A236 /* Debug */,
+				02871A9D1B9189D60073A236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02871A9E1B9189D60073A236 /* Build configuration list for PBXNativeTarget "Humanize Her" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02871A9F1B9189D60073A236 /* Debug */,
+				02871AA01B9189D60073A236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		02871AA11B9189D60073A236 /* Build configuration list for PBXNativeTarget "Humanize HerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02871AA21B9189D60073A236 /* Debug */,
+				02871AA31B9189D60073A236 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 02871A771B9189D60073A236 /* Project object */;
+}
