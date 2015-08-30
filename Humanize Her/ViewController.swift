@@ -72,7 +72,7 @@ class ViewController: UIViewController {
         let image = UIImage(named: assetName)
         let imageView = UIImageView(image: image!)
         imageView.contentMode = .ScaleAspectFill
-        imageView.frame = CGRect(x: 0, y: 0, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds))
+        imageView.frame = CGRect(x: 0, y: 56, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds))
         overlayView.addSubview(imageView)
     }
     
@@ -106,7 +106,7 @@ class ViewController: UIViewController {
         previewLayer?.videoGravity = AVLayerVideoGravityResizeAspect; // AVLayerVideoGravityResizeAspectFill
         //previewLayer?.bounds = bounds
         //previewLayer?.frame = self.view.frame
-        previewLayer?.frame = CGRect(x: 0, y: -25, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds))
+        previewLayer?.frame = CGRect(x: 0, y: -50, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds))
         videoView.layer.addSublayer(previewLayer!)
         captureSession.startRunning()
     }
