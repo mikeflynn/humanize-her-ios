@@ -24,6 +24,9 @@
 		02E417161B92E53400BAFD1A /* icon_doctor.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417121B92E53400BAFD1A /* icon_doctor.png */; settings = {ASSET_TAGS = (); }; };
 		02E417171B92E53400BAFD1A /* icon_gaming.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417131B92E53400BAFD1A /* icon_gaming.png */; settings = {ASSET_TAGS = (); }; };
 		02E417191B92E59500BAFD1A /* icon_female.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417181B92E59500BAFD1A /* icon_female.png */; settings = {ASSET_TAGS = (); }; };
+		02E4171D1B93C71500BAFD1A /* ios_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E4171C1B93C71500BAFD1A /* ios_logo.png */; settings = {ASSET_TAGS = (); }; };
+		02E4171F1B94108700BAFD1A /* icon_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E4171E1B94108700BAFD1A /* icon_help.png */; settings = {ASSET_TAGS = (); }; };
+		02E417231B94174000BAFD1A /* icon_hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 02E417221B94174000BAFD1A /* icon_hamburger.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,9 @@
 		02E417121B92E53400BAFD1A /* icon_doctor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_doctor.png; sourceTree = "<group>"; };
 		02E417131B92E53400BAFD1A /* icon_gaming.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_gaming.png; sourceTree = "<group>"; };
 		02E417181B92E59500BAFD1A /* icon_female.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_female.png; sourceTree = "<group>"; };
+		02E4171C1B93C71500BAFD1A /* ios_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ios_logo.png; sourceTree = "<group>"; };
+		02E4171E1B94108700BAFD1A /* icon_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_help.png; sourceTree = "<group>"; };
+		02E417221B94174000BAFD1A /* icon_hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hamburger.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +144,9 @@
 		02E417031B925B8700BAFD1A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				02E417221B94174000BAFD1A /* icon_hamburger.png */,
+				02E4171E1B94108700BAFD1A /* icon_help.png */,
+				02E4171C1B93C71500BAFD1A /* ios_logo.png */,
 				02E417181B92E59500BAFD1A /* icon_female.png */,
 				02E417101B92E53400BAFD1A /* icon_baby.png */,
 				02E417111B92E53400BAFD1A /* icon_briefcase.png */,
@@ -236,6 +245,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				02E417151B92E53400BAFD1A /* icon_briefcase.png in Resources */,
+				02E4171F1B94108700BAFD1A /* icon_help.png in Resources */,
 				02E417141B92E53400BAFD1A /* icon_baby.png in Resources */,
 				02E4170D1B925BB100BAFD1A /* suit.png in Resources */,
 				02E4170A1B925BB100BAFD1A /* doctor.png in Resources */,
@@ -244,6 +254,8 @@
 				02E417091B925BB100BAFD1A /* clinton.png in Resources */,
 				02871A8F1B9189D60073A236 /* LaunchScreen.xib in Resources */,
 				02871A8C1B9189D60073A236 /* Images.xcassets in Resources */,
+				02E4171D1B93C71500BAFD1A /* ios_logo.png in Resources */,
+				02E417231B94174000BAFD1A /* icon_hamburger.png in Resources */,
 				02E417161B92E53400BAFD1A /* icon_doctor.png in Resources */,
 				02E417191B92E59500BAFD1A /* icon_female.png in Resources */,
 				02E417171B92E53400BAFD1A /* icon_gaming.png in Resources */,

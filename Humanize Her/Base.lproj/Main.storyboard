@@ -19,20 +19,14 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gh2-pq-8fN">
-                                <rect key="frame" x="0.0" y="44" width="600" height="491"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="471"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LGF-8q-PNu" userLabel="Overlay Wrapper">
-                                <rect key="frame" x="0.0" y="44" width="600" height="491"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="471"/>
                             </view>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RGz-5v-M1I">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
-                                <items>
-                                    <navigationItem id="3CZ-DS-gGh"/>
-                                </items>
-                            </navigationBar>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cQ-s0-h46" userLabel="Filters">
-                                <rect key="frame" x="0.0" y="534" width="600" height="66"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cQ-s0-h46" userLabel="Filters">
+                                <rect key="frame" x="0.0" y="535" width="600" height="65"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5P-K9-Y1z">
                                         <rect key="frame" x="5" y="10" width="82" height="50"/>
@@ -127,24 +121,66 @@
                                     <constraint firstItem="SDo-Fy-dQ2" firstAttribute="width" secondItem="o5P-K9-Y1z" secondAttribute="width" id="y0c-QF-jTx"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6cZ-p9-5AE" userLabel="Title">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ios_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hBe-Wq-ox2">
+                                        <rect key="frame" x="65" y="24" width="220" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="2q5-wp-r6l"/>
+                                            <constraint firstAttribute="width" constant="316" id="VW9-AD-cJ8"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="VW9-AD-cJ8"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNY-mk-2Oc">
+                                        <rect key="frame" x="8" y="22" width="30" height="30"/>
+                                        <state key="normal" image="icon_hamburger.png"/>
+                                        <connections>
+                                            <action selector="showActionSheet:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lcW-qH-zg5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hBe-Wq-ox2" firstAttribute="leading" secondItem="jNY-mk-2Oc" secondAttribute="trailing" constant="27" id="4I0-VZ-F9W"/>
+                                    <constraint firstItem="jNY-mk-2Oc" firstAttribute="top" secondItem="6cZ-p9-5AE" secondAttribute="top" constant="22" id="G6l-te-sE6"/>
+                                    <constraint firstItem="jNY-mk-2Oc" firstAttribute="leading" secondItem="6cZ-p9-5AE" secondAttribute="leadingMargin" id="Hgf-vB-Jvd"/>
+                                    <constraint firstItem="jNY-mk-2Oc" firstAttribute="centerY" secondItem="hBe-Wq-ox2" secondAttribute="centerY" id="iDo-2b-d0p"/>
+                                    <constraint firstItem="hBe-Wq-ox2" firstAttribute="leading" secondItem="6cZ-p9-5AE" secondAttribute="leading" constant="65" id="o3N-dj-K3C"/>
+                                    <constraint firstItem="hBe-Wq-ox2" firstAttribute="centerX" secondItem="6cZ-p9-5AE" secondAttribute="centerX" id="se4-Ii-uxN"/>
+                                    <constraint firstAttribute="bottom" secondItem="hBe-Wq-ox2" secondAttribute="bottom" constant="14" id="wiT-Gf-DNV"/>
+                                    <constraint firstItem="hBe-Wq-ox2" firstAttribute="top" secondItem="6cZ-p9-5AE" secondAttribute="top" constant="24" id="z8o-Jc-8YJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="se4-Ii-uxN"/>
+                                    </mask>
+                                </variation>
+                            </view>
                         </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gh2-pq-8fN" firstAttribute="top" secondItem="RGz-5v-M1I" secondAttribute="top" constant="44" id="4CM-vE-gxn"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="AQg-5R-01V"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="leading" secondItem="6cZ-p9-5AE" secondAttribute="leading" id="BLi-Lr-bOK"/>
                             <constraint firstItem="gh2-pq-8fN" firstAttribute="leading" secondItem="LGF-8q-PNu" secondAttribute="leading" id="G7T-TD-xV5"/>
-                            <constraint firstItem="4cQ-s0-h46" firstAttribute="top" secondItem="gh2-pq-8fN" secondAttribute="bottom" constant="-1" id="G8x-4l-Ea2"/>
+                            <constraint firstItem="4cQ-s0-h46" firstAttribute="top" secondItem="gh2-pq-8fN" secondAttribute="bottom" id="G8x-4l-Ea2"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="trailing" secondItem="6cZ-p9-5AE" secondAttribute="trailing" id="Kc2-ph-gJ6"/>
                             <constraint firstItem="LGF-8q-PNu" firstAttribute="leading" secondItem="4cQ-s0-h46" secondAttribute="leading" id="KvO-AE-raf"/>
                             <constraint firstItem="4cQ-s0-h46" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="MGa-7z-OOD"/>
                             <constraint firstItem="LGF-8q-PNu" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" constant="-65" id="PTY-bg-kpl"/>
-                            <constraint firstItem="RGz-5v-M1I" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Ugg-yn-QQr"/>
+                            <constraint firstItem="6cZ-p9-5AE" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Rhg-5f-hxQ"/>
                             <constraint firstItem="LGF-8q-PNu" firstAttribute="trailing" secondItem="gh2-pq-8fN" secondAttribute="trailing" id="Xcz-fj-gpF"/>
                             <constraint firstAttribute="trailing" secondItem="4cQ-s0-h46" secondAttribute="trailing" id="Zxz-Wx-Cck"/>
-                            <constraint firstItem="RGz-5v-M1I" firstAttribute="trailing" secondItem="gh2-pq-8fN" secondAttribute="trailing" id="Zzq-iq-ZQd"/>
                             <constraint firstItem="LGF-8q-PNu" firstAttribute="bottom" secondItem="gh2-pq-8fN" secondAttribute="bottom" id="aCm-xn-RnU"/>
-                            <constraint firstItem="LGF-8q-PNu" firstAttribute="top" secondItem="RGz-5v-M1I" secondAttribute="bottom" id="drA-JK-vXL"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="top" secondItem="LGF-8q-PNu" secondAttribute="top" id="gKI-0o-3fq"/>
                             <constraint firstItem="gh2-pq-8fN" firstAttribute="bottom" secondItem="LGF-8q-PNu" secondAttribute="bottom" id="mo9-BO-qiL"/>
+                            <constraint firstItem="gh2-pq-8fN" firstAttribute="top" secondItem="6cZ-p9-5AE" secondAttribute="bottom" id="rKz-lI-hj9"/>
                             <constraint firstItem="4cQ-s0-h46" firstAttribute="trailing" secondItem="LGF-8q-PNu" secondAttribute="trailing" id="tD8-DE-zGy"/>
                             <constraint firstItem="4cQ-s0-h46" firstAttribute="bottom" secondItem="2fi-mo-0CV" secondAttribute="top" id="w1f-k5-pMO"/>
-                            <constraint firstItem="LGF-8q-PNu" firstAttribute="leading" secondItem="RGz-5v-M1I" secondAttribute="leading" id="xwT-vD-rwq"/>
                         </constraints>
                     </view>
                     <connections>
@@ -154,7 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="340" y="372"/>
+            <point key="canvasLocation" x="356" y="372"/>
         </scene>
     </scenes>
     <resources>
@@ -163,5 +199,7 @@
         <image name="icon_doctor.png" width="50" height="50"/>
         <image name="icon_female.png" width="50" height="50"/>
         <image name="icon_gaming.png" width="50" height="50"/>
+        <image name="icon_hamburger.png" width="50" height="50"/>
+        <image name="ios_logo.png" width="227" height="30"/>
     </resources>
 </document>

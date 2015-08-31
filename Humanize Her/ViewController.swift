@@ -62,6 +62,25 @@ class ViewController: UIViewController {
         updateFilter("kid.png")
     }
     
+    @IBAction func showActionSheet(sender: AnyObject) {
+        let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
+        
+        let deleteAction = UIAlertAction(title: "Photo", style: .Default, handler: {
+            (alert: UIAlertAction!) -> Void in
+            // Save screenshot to Photo Roll
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
+            (alert: UIAlertAction!) -> Void in
+            // Cancelled.
+        })
+        
+        optionMenu.addAction(deleteAction)
+        optionMenu.addAction(cancelAction)
+        
+        self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
     func updateFilter(assetName: String) {
         let bounds:CGRect = overlayView.bounds
         
@@ -106,7 +125,7 @@ class ViewController: UIViewController {
         previewLayer?.videoGravity = AVLayerVideoGravityResizeAspect; // AVLayerVideoGravityResizeAspectFill
         //previewLayer?.bounds = bounds
         //previewLayer?.frame = self.view.frame
-        previewLayer?.frame = CGRect(x: 0, y: -50, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds))
+        previewLayer?.frame = CGRect(x: 0, y: -70, width: CGRectGetWidth(bounds), height: CGRectGetHeight(bounds))
         videoView.layer.addSublayer(previewLayer!)
         captureSession.startRunning()
     }
