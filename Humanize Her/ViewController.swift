@@ -37,30 +37,13 @@ class ViewController: UIViewController {
         if captureDevice != nil {
             beginVideoSession()
         }
+        
+        drawFilters()
     }
     
     @IBOutlet weak var videoView: UIView!
     @IBOutlet weak var overlayView: UIView!
-    
-    @IBAction func filterDoctor(sender: AnyObject) {
-        updateFilter("doctor.png")
-    }
-    
-    @IBAction func filterNone(sender: AnyObject) {
-        updateFilter("transparent.png")
-    }
-    
-    @IBAction func filterSuit(sender: AnyObject) {
-        updateFilter("suit.png")
-    }
-    
-    @IBAction func filterGamer(sender: AnyObject) {
-        updateFilter("hoodie.png")
-    }
-    
-    @IBAction func filterKid(sender: AnyObject) {
-        updateFilter("kid.png")
-    }
+    @IBOutlet weak var filterView: UIScrollView!
     
     @IBAction func showActionSheet(sender: AnyObject) {
         let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
@@ -79,6 +62,68 @@ class ViewController: UIViewController {
         optionMenu.addAction(cancelAction)
         
         self.presentViewController(optionMenu, animated: true, completion: nil)
+    }
+    
+    func filterDoctor(sender: AnyObject) {
+        updateFilter("doctor.png")
+    }
+    
+    func filterNone(sender: AnyObject) {
+        updateFilter("transparent.png")
+    }
+    
+    func filterSuit(sender: AnyObject) {
+        updateFilter("suit.png")
+    }
+    
+    func filterGamer(sender: AnyObject) {
+        updateFilter("hoodie.png")
+    }
+    
+    func filterKid(sender: AnyObject) {
+        updateFilter("kid.png")
+    }
+    
+    func filterTest(sender: AnyObject) {
+        updateFilter("kid.png")
+    }
+    
+    func drawFilters() {
+        let filters: [[String:String]] = [
+            ["icon": "icon_help.png", "action": "filterTest:"],
+            ["icon": "icon_female.png", "action": "filterNone:"],
+            ["icon": "icon_doctor.png", "action": "filterDoctor:"],
+            ["icon": "icon_briefcase.png", "action": "filterSuit:"],
+            ["icon": "icon_gaming.png", "action": "filterGamer:"],
+            ["icon": "icon_baby.png", "action": "filterKid:"],
+        ]
+        
+        filterView.contentSize = CGSizeMake(5 + (102 * CGFloat(filters.count)), filterView.contentSize.height)
+        filterView.userInteractionEnabled = true
+        
+        
+        let containerView = UIView()
+        containerView.frame = CGRectMake(0, 0, filterView.contentSize.width + 10, filterView.contentSize.height + 100);
+        containerView.userInteractionEnabled = true
+        //containerView.backgroundColor = UIColor.brownColor()
+        filterView.addSubview(containerView)
+        
+        var x:Int = 0
+        for filter in filters {
+            let btnImg = UIImage(named: filter["icon"]!) as UIImage?
+            
+            let btn = UIButton()
+            btn.frame = CGRect(x: 5 + (102 * x), y: 10, width: 82, height: 50)
+            btn.userInteractionEnabled = true
+            btn.setImage(btnImg, forState: .Normal)
+            //btn.setImage(UIImage(named: "icon_help.png"), forState: UIControlState.Highlighted)
+            btn.tag = x + 100
+            btn.addTarget(self, action: Selector(filter["action"]!), forControlEvents: UIControlEvents.TouchUpInside)
+            containerView.addSubview(btn)
+            x++
+        }
+
+        filterView.setContentOffset(CGPointMake(107.0, 0.0), animated: true)
     }
     
     func updateFilter(assetName: String) {
