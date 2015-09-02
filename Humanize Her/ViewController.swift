@@ -13,8 +13,10 @@ class ViewController: UIViewController {
 
     let captureSession = AVCaptureSession()
     var previewLayer : AVCaptureVideoPreviewLayer?
-    
     var captureDevice : AVCaptureDevice?
+    
+    var filterCount : Int = 0
+    var filterLevel : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +40,16 @@ class ViewController: UIViewController {
             beginVideoSession()
         }
         
-        drawFilters()
+        let initialFilters: [[String:String]] = [
+            ["icon": "icon_help.png", "action": "filterTest:"],
+            ["icon": "icon_female.png", "action": "filterNone:"],
+            ["icon": "icon_doctor.png", "action": "filterDoctor:"],
+            ["icon": "icon_briefcase.png", "action": "filterSuit:"],
+            ["icon": "icon_gaming.png", "action": "filterGamer:"],
+            ["icon": "icon_baby.png", "action": "filterKid:"],
+        ]
+        
+        drawFilters(initialFilters)
     }
     
     @IBOutlet weak var videoView: UIView!
@@ -48,9 +59,38 @@ class ViewController: UIViewController {
     @IBAction func showActionSheet(sender: AnyObject) {
         let optionMenu = UIAlertController(title: nil, message: "Choose Option", preferredStyle: .ActionSheet)
         
-        let deleteAction = UIAlertAction(title: "Photo", style: .Default, handler: {
+        //let photoAction = UIAlertAction(title: "Save Photo", style: .Default, handler: {
+        //    (alert: UIAlertAction!) -> Void in
+        //
+        //    self.screenShotMethod()
+        //    self.makeAlert("Humanize Her", msg: "Photo saved for future humanizing.", button: "Thanks")
+        //})
+
+        let ignoreAction = UIAlertAction(title: "Continue Ignoring Her", style: .Default, handler: {
             (alert: UIAlertAction!) -> Void in
-            // Save screenshot to Photo Roll
+
+            if self.filterLevel == 0 {
+                let moreFilters: [[String:String]] = [
+                    ["icon": "icon_help.png", "action": "filterTest:"],
+                ]
+            
+                self.drawFilters(moreFilters)
+            
+                self.makeAlert("Level 2", msg: "More super manly filters added.", button: "Humanize Her!")
+            } else if self.filterLevel == 1 {
+                let moreFilters: [[String:String]] = [
+                    ["icon": "icon_help.png", "action": "filterTest:"],
+                ]
+                
+                self.drawFilters(moreFilters)
+                
+                self.makeAlert("Level 3", msg: "We're maxed out here.", button: "Humanize Her!")
+            } else {
+                self.makeAlert("Maximum Level Reached", msg: "Nowhere else to go. I guess you're just an asshole.", button: "Whatever.")
+            }
+            
+            self.filterLevel++
+            
         })
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: {
@@ -58,7 +98,8 @@ class ViewController: UIViewController {
             // Cancelled.
         })
         
-        optionMenu.addAction(deleteAction)
+        //optionMenu.addAction(photoAction)
+        optionMenu.addAction(ignoreAction)
         optionMenu.addAction(cancelAction)
         
         self.presentViewController(optionMenu, animated: true, completion: nil)
@@ -88,27 +129,26 @@ class ViewController: UIViewController {
         updateFilter("kid.png")
     }
     
-    func drawFilters() {
-        let filters: [[String:String]] = [
-            ["icon": "icon_help.png", "action": "filterTest:"],
-            ["icon": "icon_female.png", "action": "filterNone:"],
-            ["icon": "icon_doctor.png", "action": "filterDoctor:"],
-            ["icon": "icon_briefcase.png", "action": "filterSuit:"],
-            ["icon": "icon_gaming.png", "action": "filterGamer:"],
-            ["icon": "icon_baby.png", "action": "filterKid:"],
-        ]
+    func drawFilters(filters: [[String:String]]) {
         
-        filterView.contentSize = CGSizeMake(5 + (102 * CGFloat(filters.count)), filterView.contentSize.height)
+        let startCount = filterCount
+        filterCount = filterCount + filters.count
+        
+        filterView.contentSize = CGSizeMake(5 + (102 * CGFloat(filterCount)), filterView.contentSize.height)
         filterView.userInteractionEnabled = true
         
+        var containerView: UIView = UIView()
+        if filterView.subviews.count == 0 {
+            containerView.userInteractionEnabled = true
+            //containerView.backgroundColor = UIColor.brownColor()
+            filterView.addSubview(containerView)
+        } else {
+            containerView = filterView.subviews[0]
+        }
         
-        let containerView = UIView()
         containerView.frame = CGRectMake(0, 0, filterView.contentSize.width + 10, filterView.contentSize.height + 100);
-        containerView.userInteractionEnabled = true
-        //containerView.backgroundColor = UIColor.brownColor()
-        filterView.addSubview(containerView)
         
-        var x:Int = 0
+        var x:Int = startCount
         for filter in filters {
             let btnImg = UIImage(named: filter["icon"]!) as UIImage?
             
@@ -146,6 +186,24 @@ class ViewController: UIViewController {
             device.focusMode = .AutoFocus
             device.unlockForConfiguration()
         }
+    }
+    
+    func makeAlert(title: String, msg: String, button: String) {
+        let alert8 = UIAlertController(title: title, message: msg, preferredStyle: UIAlertControllerStyle.Alert)
+        alert8.addAction(UIAlertAction(title: button, style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert8, animated: true, completion: nil)
+    }
+    
+    func screenShotMethod() {
+        let layer = UIApplication.sharedApplication().keyWindow!.layer
+        let scale = UIScreen.mainScreen().scale
+        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+        
+        layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        UIImageWriteToSavedPhotosAlbum(screenshot, nil, nil, nil)
     }
     
     func beginVideoSession() {
