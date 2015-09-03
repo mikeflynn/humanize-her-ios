@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var filterCount : Int = 0
     var filterLevel : Int = 0
     
+    var introShown : Bool = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +43,7 @@ class ViewController: UIViewController {
         }
         
         let initialFilters: [[String:String]] = [
-            ["icon": "icon_help.png", "action": "filterTest:"],
+            ["icon": "icon_help.png", "action": "filterHelp:"],
             ["icon": "icon_female.png", "action": "filterNone:"],
             ["icon": "icon_doctor.png", "action": "filterDoctor:"],
             ["icon": "icon_briefcase.png", "action": "filterSuit:"],
@@ -49,7 +51,16 @@ class ViewController: UIViewController {
             ["icon": "icon_baby.png", "action": "filterKid:"],
         ]
         
-        drawFilters(initialFilters)
+        drawFilters(initialFilters, firstFilter: 1)
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        if self.introShown == false {
+            updateFilter("help.png")
+            self.introShown = true
+        }
     }
     
     @IBOutlet weak var videoView: UIView!
@@ -71,18 +82,18 @@ class ViewController: UIViewController {
 
             if self.filterLevel == 0 {
                 let moreFilters: [[String:String]] = [
-                    ["icon": "icon_help.png", "action": "filterTest:"],
+                    ["icon": "icon_money.png", "action": "filterTrump:"],
                 ]
             
-                self.drawFilters(moreFilters)
+                self.drawFilters(moreFilters, firstFilter: 4)
             
                 self.makeAlert("Level 2", msg: "More super manly filters added.", button: "Humanize Her!")
             } else if self.filterLevel == 1 {
                 let moreFilters: [[String:String]] = [
-                    ["icon": "icon_help.png", "action": "filterTest:"],
+                    ["icon": "icon_bang.png", "action": "filterBatman:"],
                 ]
                 
-                self.drawFilters(moreFilters)
+                self.drawFilters(moreFilters, firstFilter: 5)
                 
                 self.makeAlert("Level 3", msg: "We're maxed out here.", button: "Humanize Her!")
             } else {
@@ -125,11 +136,19 @@ class ViewController: UIViewController {
         updateFilter("kid.png")
     }
     
-    func filterTest(sender: AnyObject) {
-        updateFilter("kid.png")
+    func filterHelp(sender: AnyObject) {
+        updateFilter("help.png")
     }
     
-    func drawFilters(filters: [[String:String]]) {
+    func filterTrump(sender: AnyObject) {
+        updateFilter("trump.png")
+    }
+    
+    func filterBatman(sender: AnyObject) {
+        updateFilter("batman.png")
+    }
+    
+    func drawFilters(filters: [[String:String]], firstFilter: Int) {
         
         let startCount = filterCount
         filterCount = filterCount + filters.count
@@ -163,7 +182,7 @@ class ViewController: UIViewController {
             x++
         }
 
-        filterView.setContentOffset(CGPointMake(107.0, 0.0), animated: true)
+        filterView.setContentOffset(CGPointMake(CGFloat(5 + (102 * firstFilter)), 0.0), animated: true)
     }
     
     func updateFilter(assetName: String) {

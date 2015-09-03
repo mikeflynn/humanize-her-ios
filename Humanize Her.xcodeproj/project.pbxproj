@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		027FF3391B981EA600CEB292 /* batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 027FF3371B981EA600CEB292 /* batman.png */; settings = {ASSET_TAGS = (); }; };
+		027FF33A1B981EA600CEB292 /* trump.png in Resources */ = {isa = PBXBuildFile; fileRef = 027FF3381B981EA600CEB292 /* trump.png */; settings = {ASSET_TAGS = (); }; };
+		027FF33D1B9821F100CEB292 /* icon_bang.png in Resources */ = {isa = PBXBuildFile; fileRef = 027FF33B1B9821F100CEB292 /* icon_bang.png */; settings = {ASSET_TAGS = (); }; };
+		027FF33E1B9821F100CEB292 /* icon_money.png in Resources */ = {isa = PBXBuildFile; fileRef = 027FF33C1B9821F100CEB292 /* icon_money.png */; settings = {ASSET_TAGS = (); }; };
+		027FF3401B98282000CEB292 /* help.png in Resources */ = {isa = PBXBuildFile; fileRef = 027FF33F1B98282000CEB292 /* help.png */; settings = {ASSET_TAGS = (); }; };
 		02871A851B9189D60073A236 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02871A841B9189D60073A236 /* AppDelegate.swift */; };
 		02871A871B9189D60073A236 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02871A861B9189D60073A236 /* ViewController.swift */; };
 		02871A8A1B9189D60073A236 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02871A881B9189D60073A236 /* Main.storyboard */; };
@@ -40,6 +45,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		027FF3371B981EA600CEB292 /* batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batman.png; sourceTree = "<group>"; };
+		027FF3381B981EA600CEB292 /* trump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trump.png; sourceTree = "<group>"; };
+		027FF33B1B9821F100CEB292 /* icon_bang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_bang.png; sourceTree = "<group>"; };
+		027FF33C1B9821F100CEB292 /* icon_money.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_money.png; sourceTree = "<group>"; };
+		027FF33F1B98282000CEB292 /* help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help.png; sourceTree = "<group>"; };
 		02871A7F1B9189D60073A236 /* Humanize Her.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Humanize Her.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02871A831B9189D60073A236 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		02871A841B9189D60073A236 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +154,11 @@
 		02E417031B925B8700BAFD1A /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				027FF33F1B98282000CEB292 /* help.png */,
+				027FF33B1B9821F100CEB292 /* icon_bang.png */,
+				027FF33C1B9821F100CEB292 /* icon_money.png */,
+				027FF3371B981EA600CEB292 /* batman.png */,
+				027FF3381B981EA600CEB292 /* trump.png */,
 				02E417221B94174000BAFD1A /* icon_hamburger.png */,
 				02E4171E1B94108700BAFD1A /* icon_help.png */,
 				02E4171C1B93C71500BAFD1A /* ios_logo.png */,
@@ -246,6 +261,9 @@
 			files = (
 				02E417151B92E53400BAFD1A /* icon_briefcase.png in Resources */,
 				02E4171F1B94108700BAFD1A /* icon_help.png in Resources */,
+				027FF3391B981EA600CEB292 /* batman.png in Resources */,
+				027FF33A1B981EA600CEB292 /* trump.png in Resources */,
+				027FF33E1B9821F100CEB292 /* icon_money.png in Resources */,
 				02E417141B92E53400BAFD1A /* icon_baby.png in Resources */,
 				02E4170D1B925BB100BAFD1A /* suit.png in Resources */,
 				02E4170A1B925BB100BAFD1A /* doctor.png in Resources */,
@@ -258,8 +276,10 @@
 				02E417231B94174000BAFD1A /* icon_hamburger.png in Resources */,
 				02E417161B92E53400BAFD1A /* icon_doctor.png in Resources */,
 				02E417191B92E59500BAFD1A /* icon_female.png in Resources */,
+				027FF33D1B9821F100CEB292 /* icon_bang.png in Resources */,
 				02E417171B92E53400BAFD1A /* icon_gaming.png in Resources */,
 				02E4170C1B925BB100BAFD1A /* kid.png in Resources */,
+				027FF3401B98282000CEB292 /* help.png in Resources */,
 				02E4170B1B925BB100BAFD1A /* hoodie.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
